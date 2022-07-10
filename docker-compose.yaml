@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  dockerwebapi:
+    image: dockerwebapi
+    container_name: dockerwebapi-container
+    build:
+      context: .
+    ports:
+      - "8181:5000"
